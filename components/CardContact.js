@@ -1,22 +1,40 @@
-import Image from "next/image"
-import Whatsapp from "../public/img/whatsapp.png"
-import Instagram from "../public/img/instagram.png"
-import Facebook from "../public/img/facebook.png"
-import Linkedin from "../public/img/linkedin.png"
-import Iframe from 'react-iframe'
+import Image from "next/image";
+import Whatsapp from "../public/img/whatsapp.png";
+import Instagram from "../public/img/instagram.png";
+import Facebook from "../public/img/facebook.png";
+import Linkedin from "../public/img/linkedin.png";
+import Iframe from 'react-iframe';
+import Profile from "../public/img/pf2.jpg";
 function CardContact() {
     return (
         <>
 
             <div className="bg-white rounded-md lg:flex shadow-2xl  md:w-auto relative z-30 mx-auto">
 
-                <div className="lg:hidden p-5 bg-gray-900 rounded">
+                {/* <div className="lg:hidden p-5 bg-gray-900 rounded">
                     <img src="/img/pf2.jpg" alt="" width="200" className="mx-auto rounded overflow-hidden	"/>
                     
                 </div>
                 <div className="hidden lg:inline-block bg-gray-800">
                     <img src="/img/pf2.jpg" alt="" width="300" className="mx-auto rounded overflow-hidden my-16"/>
                     <div className="text-white absolute -mt-32  pl-5 grid ">
+                            <span className="lg:text-lg font-bold">Zulkarnain</span>
+                            <span className="lg:text-sm">Web Development</span>
+                    </div>    
+                </div> */}
+
+                <div className="lg:hidden  p-5 bg-gray-900 rounded ">
+                    <div className="relative w-[60%] mx-auto">
+                    <Image src={Profile} objectFit="contain" loading="lazy" className="rounded hover:scale-110 transition transform duration-500 ease-out" />
+                    </div>
+                    {/* <img src="/img/2.jpg" alt="" width="150" className="mx-auto rounded overflow-hidden	"/> */}
+                    
+                </div>
+
+                <div className="hidden relative lg:inline-block bg-gray-900  w-80">
+                    <Image src={Profile} objectFit="contain" layout="fill" loading="lazy" className="hover:scale-110 transition transform duration-500 ease-out" />
+                    {/* <img src="/img/pf4.jpg" alt="" width="350" className="mx-auto rounded overflow-hidden my-16"/> */}
+                    <div className="text-white  my-52 xl:my-72 p-5 absolute  grid ">
                             <span className="lg:text-lg font-bold">Zulkarnain</span>
                             <span className="lg:text-sm">Web Development</span>
                     </div>    

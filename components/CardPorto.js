@@ -1,10 +1,11 @@
-import Image from "next/image"
-import Whatsapp from "../public/img/whatsapp.png"
-import Instagram from "../public/img/instagram.png"
-import Facebook from "../public/img/facebook.png"
-import Linkedin from "../public/img/linkedin.png"
+import Image from "next/image";
+import Whatsapp from "../public/img/whatsapp.png";
+import Instagram from "../public/img/instagram.png";
+import Facebook from "../public/img/facebook.png";
+import Linkedin from "../public/img/linkedin.png";
 import { Scrollbars } from 'react-custom-scrollbars';
 
+import Profile from "../public/img/pf3.jpg";
 
 function CardPorto() {
     return (
@@ -12,13 +13,30 @@ function CardPorto() {
 
             <div className="bg-white rounded-md lg:flex shadow-2xl  md:w-auto relative z-30 mx-auto">
 
-                <div className="lg:hidden p-5 bg-gray-900 rounded">
+                {/* <div className="lg:hidden p-5 bg-gray-900 rounded">
                     <img src="/img/pf3.jpg" alt="" width="200" className="mx-auto rounded overflow-hidden	"/>
                     
                 </div>
                 <div className="hidden lg:inline-block bg-gray-800 ">
                     <img src="/img/pf3.jpg" alt="" width="300" className="mx-auto rounded overflow-hidden my-16"/>
                     <div className="text-white absolute -mt-32  pl-5 grid ">
+                            <span className="lg:text-lg font-bold">Zulkarnain</span>
+                            <span className="lg:text-sm">Web Development</span>
+                    </div>    
+                </div> */}
+
+                <div className="lg:hidden  p-5 bg-gray-900 rounded ">
+                    <div className="relative w-[60%] mx-auto">
+                    <Image src={Profile} objectFit="contain" loading="lazy" className="rounded hover:scale-110 transition transform duration-500 ease-out" />
+                    </div>
+                    {/* <img src="/img/2.jpg" alt="" width="150" className="mx-auto rounded overflow-hidden	"/> */}
+                    
+                </div>
+
+                <div className="hidden relative lg:inline-block bg-gray-900  w-80">
+                    <Image src={Profile} objectFit="contain" layout="fill" loading="lazy" className="hover:scale-110 transition transform duration-500 ease-out" />
+                    {/* <img src="/img/pf4.jpg" alt="" width="350" className="mx-auto rounded overflow-hidden my-16"/> */}
+                    <div className="text-white  my-52 xl:my-72 p-5 absolute  grid ">
                             <span className="lg:text-lg font-bold">Zulkarnain</span>
                             <span className="lg:text-sm">Web Development</span>
                     </div>    
@@ -42,7 +60,7 @@ function CardPorto() {
 
                                 <div className="  bg-black relative ">
                                     <div className="absolute z-10 top-0 left-0 right-0 bottom-0 hover:bg-opacity-60 transition duration-500  ease-in-out    bg-gray-900 text-white bg-opacity-5 hover:text-white text-opacity-0  font-extrabold p-3"><a className="underline">E-Pay TV Kabel</a> <p className="text-xs font-Lato">Web app pembayaran TV Kabel menggunakan Layanan TRIPAY. Di bangun dengan menggunan PHP dengan DB mysql dan firebase </p></div>
-                                    <img src="/img/portofolio/SistemPembayaTvKabel.png" className="relative z-[0]"  alt=""/>
+                                    <img src="/img/portofolio/SistemPembayaTvKabel.png" className="relative z-[0] object-contain"  alt=""/>
                                 </div>
 
                                 <div className="  bg-black relative ">
