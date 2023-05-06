@@ -57,6 +57,16 @@ function CardPorto() {
                                     <div className="absolute hover:bg-opacity-60 transition duration-500  ease-in-out h-[40%]   xl:w-[45%] bg-gray-900 text-white bg-opacity-5 hover:text-white text-opacity-0  font-extrabold p-3"><a className="underline">E-Pay TV Kabel</a> <p className="text-xs font-Lato">Web app pembayaran TV Kabel menggunakan Layanan TRIPAY. Di bangun dengan menggunan PHP dengan DB mysql dan firebase </p></div>
                                     <img src="/img/portofolio/SistemPembayaTvKabel.png" className="my-5"  alt=""/>
                                 </div> */}
+                                <div className=" bg-black relative">
+                                <div className="absolute z-10 top-0 left-0 right-0 bottom-0 hover:bg-opacity-60 transition duration-500  ease-in-out    bg-gray-900 text-white bg-opacity-5 hover:text-white text-opacity-0  font-extrabold p-3"><a className="underline">Kanban multi-tanency</a> <p className="text-xs font-Lato">Aplikasi dasboard agancy untuk manage job dan helper, mengirim email, pembayaran dan melakukan pertemuan antara family dan helper. https://hirefact.com/</p></div>
+                                    <img src="/img/portofolio/HF.png" className="relative z-[0]" alt=""/>
+                                </div>
+
+                                <div className=" bg-black relative">
+                                <div className="absolute z-10 top-0 left-0 right-0 bottom-0 hover:bg-opacity-60 transition duration-500  ease-in-out    bg-gray-900 text-white bg-opacity-5 hover:text-white text-opacity-0  font-extrabold p-3"><a className="underline">Tarjih Muhammadiyah</a> <p className="text-xs font-Lato">Aplikasi untuk mempermudahkan untuk membaca tarjih. Menggunakan fitur pencarian untuk menemukan hadist dan ayat Al-Qur'an. https://tarjih.nainz.my.id/</p></div>
+                                    <img src="/img/portofolio/TJ.png" className="relative z-[0]" alt=""/>
+                                </div>
+
 
                                 <div className="  bg-black relative ">
                                     <div className="absolute z-10 top-0 left-0 right-0 bottom-0 hover:bg-opacity-60 transition duration-500  ease-in-out    bg-gray-900 text-white bg-opacity-5 hover:text-white text-opacity-0  font-extrabold p-3"><a className="underline">E-Pay TV Kabel</a> <p className="text-xs font-Lato">Web app pembayaran TV Kabel menggunakan Layanan TRIPAY. Di bangun dengan menggunan PHP dengan DB mysql dan firebase </p></div>
@@ -94,7 +104,6 @@ function CardPorto() {
                                 </div>
 
                                 
-
                             </div>
                         </Scrollbars>
                         
@@ -115,7 +124,7 @@ function CardPorto() {
             
                 <Image src={Whatsapp} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://api.whatsapp.com/send?phone=6285340910179")} />
                 <Image src={Instagram} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://instagram.com/nainz_")} />
-                <Image src={Linkedin} objectFit="contain" />
+                <Image src={Linkedin} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/zulkar-nain-46669615b")} />
                 
             </div>
         </>

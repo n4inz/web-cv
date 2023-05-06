@@ -47,7 +47,7 @@ function Card() {
                     <div className="flex justify-center text-sm font-Lato mx-6">
                         <div className="w-1/2 text-justify ">
                             <p>Nama:</p>
-                            <p>Tanggal Lahir :</p>
+                            {/* <p>Tanggal Lahir :</p> */}
                             <p>Almat         :</p>
                             <p>No. HP        :</p>
                             <p>Email         :</p>
@@ -55,7 +55,7 @@ function Card() {
                         </div>
                         <div className="w-2/2 text-left  ">
                             <p>Zulkarnain</p>
-                            <p>04 Desember 1997</p>
+                            {/* <p>04 Desember 1996</p> */}
                             <p>Jl. Bukit indah No. 183</p>
                             <p>+6285340910179</p>
                             <p>zulkar.n4inz@gmail.com</p>
@@ -78,7 +78,7 @@ function Card() {
                
                 <Image src={Whatsapp} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://api.whatsapp.com/send?phone=6285340910179")} />
                 <Image src={Instagram} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://instagram.com/nainz_")} />
-                <Image src={Linkedin} objectFit="contain" />
+                <Image src={Linkedin} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/zulkar-nain-46669615b")} />
                 
             </div>
         </>

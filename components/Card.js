@@ -34,10 +34,10 @@ function Card() {
                     
                     <Image src={Profile} objectFit="contain" layout="fill" className="hover:scale-110 transition transform duration-500 ease-out" />
                     {/* <img src="/img/2.jpg" alt="" width="450" className="mx-auto rounded overflow-hidden	"/> */}
-                    <div className="text-white absolute  my-48 xl:my-52 p-5 grid">
+                    {/* <div className="text-white absolute  my-4 xl:my-52 p-5 grid">
                             <span className="text-xs lg:text-base font-bold">Zulkarnain</span>
                             <span className="text-xs lg:text-xs">Web Development</span>
-                    </div>    
+                    </div>     */}
                 </div>
              
                 <div className="text-center mt-10">
@@ -58,7 +58,7 @@ function Card() {
 
                 <Image src={Whatsapp} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://api.whatsapp.com/send?phone=6285340910179")} />
                 <Image src={Instagram} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://instagram.com/nainz_")} />
-                <Image src={Linkedin} objectFit="contain" />
+                <Image src={Linkedin} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/zulkar-nain-46669615b")} />
 
             </div>
         </>

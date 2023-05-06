@@ -66,7 +66,7 @@ function CardContact() {
                
                 <Image src={Whatsapp} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://api.whatsapp.com/send?phone=6285340910179")} />
                 <Image src={Instagram} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://instagram.com/nainz_")} />
-                <Image src={Linkedin} objectFit="contain" />
+                <Image src={Linkedin} objectFit="contain" className="cursor-pointer" onClick={() => window.open("https://www.linkedin.com/in/zulkar-nain-46669615b")} />
                 
             </div>
         </>
